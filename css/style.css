@@ -1,0 +1,94 @@
+/* lo primero es un selector
+selector{
+    propiedad:valor;
+    propiedad2:valor;
+    propiedadN:valor
+} */
+/* 
+Selectores
+
+Selectores simples
+    Selectores elementales
+        Selector universal -> *
+        Selector de tipo o etiqueta -> Nombre 
+                                de la etiqueta h1,h2,table... etc.
+        
+
+    Selectores de atributo
+        id -> id del elemento -Poniendo previamente "#" 
+                para referirse a el id
+        clase -> clase del elemento -Ponendo previamente ".",
+                Las clases que se le pueden atribuir a una etiqueta , no
+                esta limitado.
+        otros atributos
+            [atributo]
+            [atributo=valor]
+            [atributo^=valor] -> [href^="palabra"] hará que seleccione los que empiecen por "palabra"
+            [atributo*=] -> [href*="palabra"] hará que seleccione los que contengan "palabra"
+            [atributo$=valor] -> [href$="palabra"] hará que seleccione los que terminen en "palabra".
+            [atributo|=valor] -> [lang|="en"] Hará que seleccione incluso los "en-GB"
+
+Selectores Compuestos
+    Selectores agrupados.
+        Si usas diferentes clases pero con mismo atributo se pone seguido de comas
+        .text,
+        .text-2,
+        .text-3...{}
+    Selectores combinadores
+        Selector descendiente -> Se usa si dos clases se llaman iguales, pero perteneciendo a un padre como div
+                                se separa por espacio " " 
+                                ejemplo: div .titulo{background}
+        Selector de hijos + o ~ 
+    Psudoclases- */
+
+    /* ¿Como funciona css?
+    Especificidad -> establece como de especifico es un selector para saber estili aplicar
+    El calculo se realiza con la siguente formula : 
+    Estiquetas y pseudoelementos  001
+    clases , atrbutos y psudoclases 010
+    ids 100
+    style 1000
+    !important GANA A TODO
+     */
+     
+    .box{
+        inset-block: unset;
+        font-size: 50px;
+        text-align: center;
+        width: 40%;
+        color: black;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 5px 2px 0px 2px black  ;
+    }
+p{
+    color: rgba(40, 6, 71, 0.233);
+    background-color: burlywood;
+    font-size: px;
+}
+nav a{
+    
+    margin-left: 5%;
+}
+nav img{
+    width: 10%;
+    height: 10%;
+}
+nav{
+    background-color: bisque;
+}
+
+
+#foo{
+
+    margin-top: 5%;
+    background-color: black; 
+    font-size: 50px;
+    text-align: center;
+    width: 40%;
+    color: black;
+    background: white;
+    border-radius: 15px;
+
+    box-shadow: 7px 7px 10px 10px red  ;
+}

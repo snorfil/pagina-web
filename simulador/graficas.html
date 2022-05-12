@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='grafica.css'>
+    <link rel="stylesheet" href="/pagina/css/menu.css">
+    <script src="grafica.js"></script>
+    <script src="request.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+
+
+<body>
+
+    <h1>ComprendeGraficos.com</h1>
+    <cite>
+      Dame gráficas y moveré el mundo
+    </cite>
+
+
+    <h3>Simulador</h3>
+
+
+    <nav>
+      <ul>
+        <li><a href="/pagina/index.html">Home</a></li>
+        <li><a href="graficas.html">Simulador</a></li>
+        <li><a href="#pie">Contacto</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </nav>
+
+
+
+    <table id="selectores">
+      <td> <select id="bnb_selector">
+        </select>
+      </td>
+      <td>    <select id="btc_selector">
+      </select></td>
+      <td> <select id="usdt_selector">
+      </select></td>
+      <td>   
+        <select id="eth_selector">
+        </select></td>
+    </table>
+   
+
+
+    <table>
+        <caption>Intervalo</caption>
+        <tr>
+            <td>1m</td>
+            <td>5m</td>
+            <td>15m</td>
+            <td>30m</td>
+            <td>1h</td>
+        </tr>
+        <tr>
+            <td>4h</td>
+            <td>12h</td>
+            <td>1d</td>
+            <td>1w</td>
+            <td>1M</td>
+        </tr>
+    </table>
+
+
+
+         <canvas id="myChart" auto;> 
+        </canvas>
+
+    
+    <footer id="pie">
+        <p>Author: Edwin leandro montoya osorio</p>
+        <p>Email: <a href="unicramio@hotmail.com">unicramio@hotmail.com</a></p>
+      </footer>
+
+
+      <script>
+        window.onload = function(){
+          getDataOf("BTCUSDT");
+          pares();
+  
+        };
+
+
+
+      </script>
+</body>
+</html>

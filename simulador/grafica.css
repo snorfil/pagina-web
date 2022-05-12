@@ -1,0 +1,39 @@
+div{
+    font-size: 100px;
+    text-align: center;
+   width: 50%;
+   margin: auto;
+   border-radius: 15px;
+   color:  rgb(80, 30, 30);
+   box-shadow: -5px 5px 10px 0 rgba(17, 17, 17, 0.4);
+   transition: 0.5;
+
+}
+table{
+    margin-block-end: 3%;
+    font-size: 30px;
+    margin-left:2%;
+}
+#selectores{
+    margin: auto;
+}
+
+td:hover{
+    color: aqua;
+    background-color: blue;
+}
+#myChart{
+    width: 60%;
+    height: 54%;
+    margin: auto;
+    background:rgb(216, 211, 211);
+
+}
+caption{
+    background-color: aquamarine;
+}
+legend{
+    color: blue;
+    font-size: 30px;
+}
+
