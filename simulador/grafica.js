@@ -37,6 +37,7 @@ function pintar(){
     var nombres = []
 
     for (var i = 0; i < lista.length; i++) {
+
             nombres.push('' + i)
             }
 
@@ -51,7 +52,7 @@ function pintar(){
 
         backgroundColor: ['#111'],
         label: 'index del dato:'}],
-        labels:nombres},
+        labels:tiempo},
     options: {responsive: false}
     });
 }

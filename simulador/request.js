@@ -1,9 +1,12 @@
 var lista = [];
+var fecha = ["Jan","Feb","Mar","Abr","May","Jun","Jul","Sep","Oct","Nov","Dec"]
 var nombrePares = [];
 var bnbData = [];
 var btcData = [];
 var ethData = [];
 var usdtData = [];
+var tiempo = [];
+
 async function pares(){
     var req = new XMLHttpRequest();
     var cadena;
@@ -15,10 +18,10 @@ async function pares(){
     if (req.status == 200)
         dump(req.responseText);
         let aux = JSON.parse(req.responseText);
-
         let isiN = false;
     
         for (let i = 0; i < aux.length; i++) {
+
 
             cadena = aux[i]['symbol'];
             isiN = false;
@@ -72,6 +75,18 @@ function setOptionOn(id,valor)
 }
 
 
+[
+    [
+      1499040000000,      // Open time      0
+      "0.01634790",       // Open           1
+      "0.80000000",       // High           2
+      "0.01575800",       // Low            3
+      "0.01577100",       // Close          4
+      "148976.11427815",  // Volume         5
+      1499644799999,      // Close time     6
+      "2434.19055334",    // Quote asset volume             7
+    ]
+  ]
 
 async function getDataOf(par){
     var req = new XMLHttpRequest();
@@ -84,10 +99,16 @@ async function getDataOf(par){
      
     
         for (let i = 0; i < aux.length; i++) {
-            lista.push(aux[i][3])
+            lista.push(aux[i][3]);
+            addTiempo(aux[i][6]);
             //lista_2.push(aux[i][5])
             
         }
     pintar() 
     //pintarPrueba()
+}
+
+function addTiempo(currentTime){
+    let t = new Date(currentTime);
+    tiempo.push(currentTime);
 }
