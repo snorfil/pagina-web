@@ -1,15 +1,5 @@
-div{
-    font-size: 100px;
-    text-align: center;
-   width: 50%;
-   margin: auto;
-   border-radius: 15px;
-   color:  rgb(80, 30, 30);
-   box-shadow: -5px 5px 10px 0 rgba(17, 17, 17, 0.4);
-   transition: 0.5;
-
-}
 table{
+    align-self: center;
     margin-block-end: 3%;
     font-size: 30px;
     margin-left:2%;
@@ -33,7 +23,9 @@ caption{
     background-color: aquamarine;
 }
 legend{
-    color: blue;
+    color: rgba(0, 0, 255, 0.253);
     font-size: 30px;
 }
-
+body{
+    background-color: rgba(20, 3, 59, 0.363);
+}
